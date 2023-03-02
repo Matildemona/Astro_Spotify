@@ -1,11 +1,10 @@
 ---
 import "../styles/style.css/";
 import Card from "../components/Card.astro";
-import Navigation from "../components/Navigation.astro";
 import Button from "../components/Button.astro";
 ---
 
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -14,15 +13,79 @@ import Button from "../components/Button.astro";
     <title>Astro</title>
   </head>
   <body>
-    <Navigation />
-    <h1>Astro</h1>
-    <main>
-      <Button variant="primary" size="small">TEXT</Button>
-      <Button variant="secondary" size="medium">TEXT</Button>
-      <Button variant="primary" size="large">TEXT</Button>
-      <!--       <Card header="Hello World">
-        <img src="/meme1.webp" alt="Et meme" />
-      </Card> -->
+    <header>
+      <h1>SPOTIFY</h1>
+    </header>
+    <main class="grid_main">
+      <div class="left">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Hjem</a>
+              <a href="#">Søg</a>
+              <a href="#">Dit Bibliotek</a>
+              <a href="#">Opret playliste</a>
+              <a href="#">Sange, du syntes godt...</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <h1>Fokus</h1>
+        <div class="fokus">
+          <Card title="Peaceful Piano" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=8B7BCDC2" alt="album" />
+          </Card>
+          <Card title="Deep Focus" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=500B67FB" alt="album" />
+          </Card>
+          <Card title="Jazz Vibes" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=A89D0DE6" alt="album" />
+          </Card>
+          <Card title="Focus Flow" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=225E6693" alt="album" />
+          </Card>
+          <Card title="Be Yourself" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=9D9539E7" alt="album" />
+          </Card>
+          <Card title="Think Different" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=BDC01094" alt="album" />
+          </Card>
+          <Card title="You're Great" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=7F5AE56A" alt="album" />
+          </Card>
+          <Card title="This Is New" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=4F32C4CF" alt="album" />
+          </Card>
+        </div>
+        <h1>Spotify Playlists</h1>
+        <div class="playlists">
+          <Card title="2010 Hits" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=A89D0DE6" alt="album" />
+          </Card>
+          <Card title="For You" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=500B67FB" alt="album" />
+          </Card>
+          <Card title="Other People" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=8B7BCDC2" alt="album" />
+          </Card>
+          <Card title="Dinner Party" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=BDC01094" alt="album" />
+          </Card>
+          <Card title="Prom Mix" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=9D9539E7" alt="album" />
+          </Card>
+          <Card title="Short Text" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=225E6693" alt="album" />
+          </Card>
+          <Card title="Never Better" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=4F32C4CF" alt="album" />
+          </Card>
+          <Card title="Stop Now" text="Relax and indulge with beasutiful piano pieces">
+            <img src="https://api.lorem.space/image/album?w=150&h=150&hash=7F5AE56A" alt="album" />
+          </Card>
+        </div>
+      </div>
     </main>
   </body>
 </html>
